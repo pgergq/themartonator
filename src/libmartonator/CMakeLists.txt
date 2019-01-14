@@ -12,5 +12,5 @@ target_include_directories(libmartonator PUBLIC
     PRIVATE src)
 
 target_link_libraries(libmartonator
-    nlohmann_json
-    boost)
+    PUBLIC nlohmann_json::nlohmann_json
+    PUBLIC boost)
