@@ -1,16 +1,23 @@
-#include <boost/any.hpp>
+#include "mainwindow.h"
+
+#include <qapplication.h>
 
 #include <array>
 #include <iostream>
 
+using namespace martonator;
 
-int main()
+int main(int argc, char** argv)
 {
-    auto arr = std::array{boost::any{0}, boost::any{1}, boost::any{2}};
-    std::cout << "hello world" << std::endl;
-    for (auto&& e : arr)
-    {
-        std::cout << e.type().name() << std::endl;
-    }
-    return 0;
+    Q_INIT_RESOURCE(application);
+
+    QApplication app(argc, argv);
+    QCoreApplication::setOrganizationName("pgq");
+    QCoreApplication::setApplicationName("The Martonator");
+    QCoreApplication::setApplicationVersion(MARTONATOR_VERSION);
+
+    MainWindow w;
+    w.show();
+
+    return app.exec();
 }

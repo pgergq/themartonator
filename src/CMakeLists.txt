@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 project(ProjectMartonator VERSION 0.0.1 LANGUAGES CXX)
 
 # compiler options
+add_compile_definitions(MARTONATOR_VERSION="0.0.1")
 if(MSVC)
     add_compile_options(/W4 /WX)
 else()
