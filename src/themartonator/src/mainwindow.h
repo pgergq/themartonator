@@ -3,6 +3,11 @@
 
 #include <qmainwindow.h>
 
+namespace Ui
+{
+class MainWindow;
+}
+
 namespace martonator
 {
 class MainWindow : public QMainWindow
@@ -14,9 +19,12 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_actionExit_triggered();
 
 private:
+    Ui::MainWindow* ui;
 };
+
 }   // namespace martonator
 
 #endif   // THEMARTONATOR_MAINWINDOW_H

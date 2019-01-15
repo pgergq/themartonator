@@ -1,9 +1,21 @@
 #include "mainwindow.h"
-
-#include <qmessagebox.h>
+#include "ui_mainwindow.h"
 
 using namespace martonator;
 
-MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {}
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+}
 
-MainWindow::~MainWindow() = default;
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::on_actionExit_triggered()
+{
+    this->close();
+}
