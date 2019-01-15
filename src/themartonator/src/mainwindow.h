@@ -21,6 +21,8 @@ public:
 private slots:
     void on_actionExit_triggered();
 
+    void on_actionAbouth_The_Martonator_triggered();
+
 private:
     Ui::MainWindow* ui;
 };

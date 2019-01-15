@@ -34,3 +34,5 @@
 # CMake build dir
 *build*/
 *install*/
+
+src/CMakeLists\.txt\.user
