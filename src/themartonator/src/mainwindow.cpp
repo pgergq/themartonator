@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "aboutwindow.h"
+
 #include <qmessagebox.h>
 
 using namespace martonator;
@@ -22,7 +24,8 @@ void MainWindow::on_actionExit_triggered()
     this->close();
 }
 
-void martonator::MainWindow::on_actionAbouth_The_Martonator_triggered()
+void MainWindow::on_actionAbouth_The_Martonator_triggered()
 {
-    QMessageBox::information(this, "About The Martonator...", "The Martonator v" MARTONATOR_VERSION);
+    auto about = new AboutWindow{this};
+    about->show();
 }

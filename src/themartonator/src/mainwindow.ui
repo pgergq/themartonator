@@ -36,14 +36,14 @@
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>Help</string>
+     <string>&amp;Help</string>
     </property>
     <addaction name="actionHelp"/>
     <addaction name="actionAbouth_The_Martonator"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>Edit</string>
+     <string>&amp;Edit</string>
     </property>
     <addaction name="actionCut"/>
     <addaction name="actionCopy"/>
@@ -66,7 +66,7 @@
   </action>
   <action name="actionAbouth_The_Martonator">
    <property name="text">
-    <string>Abouth The Martonator</string>
+    <string>&amp;Abouth The Martonator</string>
    </property>
   </action>
   <action name="actionNew">

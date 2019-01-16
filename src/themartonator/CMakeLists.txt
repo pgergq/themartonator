@@ -11,6 +11,9 @@ add_executable(themartonator WIN32
     src/mainwindow.cpp
     src/mainwindow.h
     src/mainwindow.ui
+    src/aboutwindow.cpp
+    src/aboutwindow.h
+    src/aboutwindow.ui
     ${QRCS}
 )
 

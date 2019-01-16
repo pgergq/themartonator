@@ -3,20 +3,24 @@
 
 #include <QDialog>
 
-namespace Ui {
+namespace Ui
+{
 class AboutWindow;
 }
 
+namespace martonator
+{
 class AboutWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit AboutWindow(QWidget *parent = nullptr);
+    explicit AboutWindow(QWidget* parent = nullptr);
     ~AboutWindow();
 
 private:
-    Ui::AboutWindow *ui;
+    Ui::AboutWindow* ui;
 };
+}   // namespace martonator
 
-#endif // ABOUTWINDOW_H
+#endif   // ABOUTWINDOW_H
