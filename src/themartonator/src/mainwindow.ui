@@ -6,22 +6,58 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>568</width>
-    <height>377</height>
+    <width>960</width>
+    <height>640</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>640</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>The Martonator</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout"/>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QCalendarWidget" name="calendarWidget_2">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QCalendarWidget" name="calendarWidget"/>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>568</width>
+     <width>960</width>
      <height>17</height>
     </rect>
    </property>
@@ -53,7 +89,6 @@
    <addaction name="menuEdit"/>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionExit">
    <property name="text">
     <string>E&amp;xit</string>
