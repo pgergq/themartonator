@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# Visual Studio generated files
+*.vs*/
+*.vscode*/
+
 # Compiled Object files
 *.slo
 *.lo
@@ -36,3 +40,4 @@
 *install*/
 
 src/CMakeLists\.txt\.user
+src/CMakeSettings.json
