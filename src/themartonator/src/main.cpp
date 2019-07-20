@@ -7,6 +7,8 @@
 
 using namespace martonator;
 
+#define STRINGIZE(arg) #arg
+
 int main(int argc, char** argv)
 {
     Q_INIT_RESOURCE(application);
@@ -14,7 +16,7 @@ int main(int argc, char** argv)
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("pgq");
     QCoreApplication::setApplicationName("The Martonator");
-    QCoreApplication::setApplicationVersion(MARTONATOR_VERSION);
+    QCoreApplication::setApplicationVersion(STRINGIZE(MARTONATOR_VERSION));
 
     MainWindow w;
     w.show();
